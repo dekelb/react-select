@@ -1082,6 +1082,7 @@ const Select = createClass({
 		let className = classNames('Select', this.props.className, {
 			'Select--multi': this.props.multi,
 			'Select--single': !this.props.multi,
+			'Select--rtl': this.props.rtl,
 			'is-clearable': this.props.clearable,
 			'is-disabled': this.props.disabled,
 			'is-focused': this.state.isFocused,
@@ -1090,7 +1091,6 @@ const Select = createClass({
 			'is-pseudo-focused': this.state.isPseudoFocused,
 			'is-searchable': this.props.searchable,
 			'has-value': valueArray.length,
-			'Select-rtl': this.props.rtl,
 		});
 
 		let removeMessage = null;
